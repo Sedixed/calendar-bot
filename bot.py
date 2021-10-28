@@ -42,7 +42,7 @@ async def send_calendars():
             get_calendars()
             for l in licences:
                 for td in td_ids:
-                    img = Image.open(f"imgs/l{l}td{td[0]}.png", 'r')
+                    img = Image.open(f"l{l}td{td[0]}.png", 'r')
                     channel = bot.get_channel(td[1])
 
                     last_sent = await channel.fetch_message(channel.last_message_id)
@@ -66,7 +66,7 @@ async def send_calendars():
 
 @bot.command(name="calendar")
 async def private_calendar(ctx, licence: int, td: int):
-    img = Image.open("../l{licence}td{td}.png", 'r')
+    img = Image.open("l{licence}td{td}.png", 'r')
 
 # --- Launch ---
 

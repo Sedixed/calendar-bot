@@ -47,7 +47,7 @@ def get_calendars():
         img_size = (260, 90, 1395, 660)
         td = {20: "1", 21: "2", 22: "3", 23: "4", 25: "1", 26: "2", 27: "3", 28: "sd"}
         #path = "/home/sedixed/licence/projets_perso/python/calendar_bot"
-        path = "https://github.com/Sedixed/calendar-bot.git/imgs"
+        path = "https://github.com/Sedixed/calendar-bot.git"
         for i in range(20, 29):
             if i != 24:
                 browser.find_by_css('span[class="x-tree3-node-text"]')[i].click()
